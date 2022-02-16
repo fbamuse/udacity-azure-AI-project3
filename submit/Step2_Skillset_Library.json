@@ -1,0 +1,32 @@
+{
+	"@odata.context": "https://search00001.search.windows.net/$metadata#skillsets/$entity",
+	"@odata.etag": "\"0x8D9F14E15B7F4F9\"",
+	"name": "azureblob-skillset",
+	"description": "Skillset created from the portal. skillsetName: azureblob-skillset; contentField: content; enrichmentGranularity: document; knowledgeStoreStorageAccount: ;",
+	"skills": [
+	  {
+		"@odata.type": "#Microsoft.Skills.Text.KeyPhraseExtractionSkill",
+		"name": "#1",
+		"description": null,
+		"context": "/document/content",
+		"defaultLanguageCode": "en",
+		"maxKeyPhraseCount": null,
+		"modelVersion": null,
+		"inputs": [
+		  {
+			"name": "text",
+			"source": "/document/content"
+		  }
+		],
+		"outputs": [
+		  {
+			"name": "keyPhrases",
+			"targetName": "keyphrases"
+		  }
+		]
+	  }
+	],
+	"cognitiveServices": null,
+	"knowledgeStore": null,
+	"encryptionKey": null
+  }

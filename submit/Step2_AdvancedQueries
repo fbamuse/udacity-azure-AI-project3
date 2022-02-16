@@ -1,0 +1,303 @@
+$top=3&$search=*&facet=source
+
+{
+    "@odata.context": "https://search00001.search.windows.net/indexes('azuretable-index')/$metadata#docs(*)",
+    "@search.facets": {
+        "source": [
+            {
+                "count": 14,
+                "value": "Company Moodle"
+            },
+            {
+                "count": 6,
+                "value": "MS Learn"
+            }
+        ]
+    },
+    "value": [
+        {
+            "@search.score": 1,
+            "Key": "company-moodle30e3c6e5-9415-4d85-8229-c2133203c535",
+            "description": "Learn the policies related to the distribution and use of computers, phones, software, and other technology",
+            "duration": 1,
+            "instructor": "Mike Montoya",
+            "level": "beginner",
+            "product": "NA",
+            "rating_average": 4.9,
+            "rating_count": 550,
+            "role": "all",
+            "source": "Company Moodle",
+            "title": "Onboarding - Technology Policies ",
+            "url": "https://www.example.com/course2",
+            "keyphrases": [
+                "other technology",
+                "policies",
+                "distribution",
+                "use",
+                "computers",
+                "phones",
+                "software"
+            ]
+        },
+        {
+            "@search.score": 1,
+            "Key": "company-moodle85ee725b-4ae0-4719-8785-ddf99e19faf1",
+            "description": "For administrators, learn our best practices for securing all databases",
+            "duration": 3,
+            "instructor": "Eileen Diaz",
+            "level": "advanced",
+            "product": "SQL",
+            "rating_average": 4.3,
+            "rating_count": 45,
+            "role": "admin",
+            "source": "Company Moodle",
+            "title": "Security for database admins",
+            "url": "https://www.example.com/course8",
+            "keyphrases": [
+                "best practices",
+                "administrators",
+                "databases"
+            ]
+        },
+        {
+            "@search.score": 1,
+            "Key": "company-moodle9700e1dc-b293-4306-9e1b-0d345863db54",
+            "description": "This course will teach you the specific ways our company uses Git. You will learn details for comments, branching, pull requests, and other procsses",
+            "duration": 3,
+            "instructor": "Claudia Blackman",
+            "level": "beginner",
+            "product": "git",
+            "rating_average": 4.5,
+            "rating_count": 125,
+            "role": "developer",
+            "source": "Company Moodle",
+            "title": "Git Workflow ",
+            "url": "https://www.example.com/course3",
+            "keyphrases": [
+                "specific ways",
+                "other procsses",
+                "course",
+                "company",
+                "Git",
+                "details",
+                "comments",
+                "requests"
+            ]
+        }
+    ]
+}
+
+$top=3&$search=*&facet=role&$select=title,instructor,role,level&$orderby=role
+
+{
+    "@odata.context": "https://search00001.search.windows.net/indexes('azuretable-index')/$metadata#docs(*)",
+    "@search.facets": {
+        "role": [
+            {
+                "count": 6,
+                "value": "developer"
+            },
+            {
+                "count": 5,
+                "value": "all"
+            },
+            {
+                "count": 2,
+                "value": "admin"
+            },
+            {
+                "count": 2,
+                "value": "architect"
+            },
+            {
+                "count": 2,
+                "value": "business-user"
+            },
+            {
+                "count": 1,
+                "value": "ai-engineer"
+            },
+            {
+                "count": 1,
+                "value": "functional-consultant"
+            },
+            {
+                "count": 1,
+                "value": "solution-architect"
+            }
+        ]
+    },
+    "value": [
+        {
+            "@search.score": 1,
+            "instructor": "Eileen Diaz",
+            "level": "advanced",
+            "role": "admin",
+            "title": "Security for database admins"
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Claudia Blackman",
+            "level": "intermediate",
+            "role": "admin",
+            "title": "DevOps for Ops"
+        },
+        {
+            "@search.score": 1,
+            "instructor": "",
+            "level": "advanced",
+            "role": "ai-engineer",
+            "title": "Use containers for your Language Understanding Intelligent Service (LUIS) Apps"
+        }
+    ]
+}
+
+$top=10&$search=*&$filter=rating_average gt 4 &$select=title, instructor,level&$orderby=role
+
+{
+    "@odata.context": "https://search00001.search.windows.net/indexes('azuretable-index')/$metadata#docs(*)",
+    "value": [
+        {
+            "@search.score": 1,
+            "instructor": "Eileen Diaz",
+            "level": "advanced",
+            "title": "Security for database admins"
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Claudia Blackman",
+            "level": "intermediate",
+            "title": "DevOps for Ops"
+        },
+        {
+            "@search.score": 1,
+            "instructor": "",
+            "level": "advanced",
+            "title": "Use containers for your Language Understanding Intelligent Service (LUIS) Apps"
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Mike Montoya",
+            "level": "beginner",
+            "title": "Onboarding - Technology Policies "
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Gerald Dominguez",
+            "level": "beginner",
+            "title": "Remote work"
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Mike Montoya",
+            "level": "beginner",
+            "title": "Workplace Health"
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Mike Montoya",
+            "level": "beginner",
+            "title": "Onboarding - Time Tracking "
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Gerald Dominguez",
+            "level": "beginner",
+            "title": "O365"
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Eileen Diaz",
+            "level": "intermediate",
+            "title": "Ethics in AI"
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Eileen Diaz",
+            "level": "advanced",
+            "title": "Encryption and security"
+        }
+    ]
+}
+
+$top=10&$rating_average/all(r: r ge 4 and r le 5) &$select=title,rating_average
+
+{
+    "@odata.context": "https://search00001.search.windows.net/indexes('azuretable-index')/$metadata#docs(*)",
+    "value": [
+        {
+            "@search.score": 1,
+            "rating_average": 4.9,
+            "title": "Onboarding - Technology Policies "
+        },
+        {
+            "@search.score": 1,
+            "rating_average": 4.3,
+            "title": "Security for database admins"
+        },
+        {
+            "@search.score": 1,
+            "rating_average": 4.5,
+            "title": "Git Workflow "
+        },
+        {
+            "@search.score": 1,
+            "rating_average": 4.4,
+            "title": "Code security"
+        },
+        {
+            "@search.score": 1,
+            "rating_average": 4.9,
+            "title": "DevOps for Ops"
+        },
+        {
+            "@search.score": 1,
+            "rating_average": 4.7,
+            "title": "Remote work"
+        },
+        {
+            "@search.score": 1,
+            "rating_average": 4.6,
+            "title": "Workplace Health"
+        },
+        {
+            "@search.score": 1,
+            "rating_average": 3.8,
+            "title": "DevOps for Dev"
+        },
+        {
+            "@search.score": 1,
+            "rating_average": 4.77,
+            "title": "Manage your Language Understanding Intelligent Service (LUIS) Apps"
+        },
+        {
+            "@search.score": 1,
+            "rating_average": 4.61,
+            "title": "Get started with AI Builder Text recognition"
+        }
+    ]
+}
+
+*&$filter=search.ismatch('Big data', 'metadata_title')&$select=metadata_title,metadata_title,metadata_title
+
+{
+    "@odata.context": "https://search00001.search.windows.net/indexes('azureblob-index')/$metadata#docs(*)",
+    "value": [
+        {
+            "@search.score": 1,
+            "metadata_title": "Privacy preservation techniques in big data analytics: a survey"
+        },
+        {
+            "@search.score": 1,
+            "metadata_title": "Big data stream analysis: a systematic literature review"
+        },
+        {
+            "@search.score": 1,
+            "metadata_title": "Multi technique amalgamation for enhanced information identification with content based image data"
+        },
+        {
+            "@search.score": 1,
+            "metadata_title": "Context-aware rule learning from smartphone data: survey, challenges and future directions"
+        }
+    ]
+}

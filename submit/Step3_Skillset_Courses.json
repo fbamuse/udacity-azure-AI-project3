@@ -1,0 +1,56 @@
+{
+	"@odata.context": "https://search00001.search.windows.net/$metadata#skillsets/$entity",
+	"@odata.etag": "\"0x8D9F14FF907AFFC\"",
+	"name": "azuretable-skillset",
+	"description": "Skillset created from the portal. skillsetName: azuretable-skillset; contentField: description; enrichmentGranularity: document; knowledgeStoreStorageAccount: ;",
+	"skills": [
+	  {
+		"@odata.type": "#Microsoft.Skills.Text.KeyPhraseExtractionSkill",
+		"name": "#1",
+		"description": null,
+		"context": "/document/description",
+		"defaultLanguageCode": "en",
+		"maxKeyPhraseCount": null,
+		"modelVersion": null,
+		"inputs": [
+		  {
+			"name": "text",
+			"source": "/document/description"
+		  }
+		],
+		"outputs": [
+		  {
+			"name": "keyPhrases",
+			"targetName": "keyphrases"
+		  }
+		]
+	  },
+	  {
+		"@odata.type": "#Microsoft.Skills.Text.CustomEntityLookupSkill",
+		"name": "#2",
+		"description": "",
+		"context": "/document/description",
+		"defaultLanguageCode": "en",
+		"entitiesDefinitionUri": "https://udacity004.blob.core.windows.net/instructor/MoodleInstructorProfiles.json?sp=r&st=2022-02-16T13:26:13Z&se=2022-02-18T21:26:13Z&spr=https&sv=2020-08-04&sr=b&sig=Sv2SyeTKyOwolttqZD7YMrBy%2FggO81ymYu6zyk9jttc%3D",
+		"globalDefaultCaseSensitive": true,
+		"globalDefaultAccentSensitive": true,
+		"globalDefaultFuzzyEditDistance": 0,
+		"inputs": [
+		  {
+			"name": "text",
+			"source": "/document/description"
+		  }
+		],
+		"outputs": [
+		  {
+			"name": "entities",
+			"targetName": "entities"
+		  }
+		],
+		"inlineEntitiesDefinition": []
+	  }
+	],
+	"cognitiveServices": null,
+	"knowledgeStore": null,
+	"encryptionKey": null
+  }

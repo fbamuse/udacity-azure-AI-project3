@@ -1,0 +1,68 @@
+{
+  "@odata.context": "https://search00001.search.windows.net/$metadata#skillsets/$entity",
+  "@odata.etag": "\"0x8D9F15174C9807D\"",
+  "name": "azureblob-skillset",
+  "description": "Skillset created from the portal. skillsetName: azureblob-skillset; contentField: content; enrichmentGranularity: document; knowledgeStoreStorageAccount: ;",
+  "skills": [
+    {
+      "@odata.type": "#Microsoft.Skills.Text.KeyPhraseExtractionSkill",
+      "name": "#1",
+      "description": null,
+      "context": "/document/content",
+      "defaultLanguageCode": "en",
+      "maxKeyPhraseCount": null,
+      "modelVersion": null,
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/content"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "keyPhrases",
+          "targetName": "keyphrases"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#Microsoft.Skills.Custom.WebApiSkill",
+      "name": "#2",
+      "description": null,
+      "context": "/document/metadata_title",
+      "uri": "https://springer12345.azurewebsites.net/api/springerlookup?code=aYNMgsaM0l5DkgNpIo8AKOEEAhnZiywkJEfSd06Wk2rzRS4RWquMww==",
+      "httpMethod": "POST",
+      "timeout": "PT30S",
+      "batchSize": 20,
+      "degreeOfParallelism": 20,
+      "inputs": [
+        {
+          "name": "ArticleName",
+          "source": "/document/metadata_title"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "publicationName",
+          "targetName": "publicationName"
+        },
+        {
+          "name": "publisher",
+          "targetName": "publisher"
+        },
+        {
+          "name": "doi",
+          "targetName": "doi"
+        },
+        {
+          "name": "publicationDate",
+          "targetName": "publicationDate"
+        }
+      ],
+      "httpHeaders": {}
+    }
+  ],
+  "cognitiveServices": null,
+  "knowledgeStore": null,
+  "encryptionKey": null
+}

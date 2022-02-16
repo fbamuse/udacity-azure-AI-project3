@@ -1,0 +1,127 @@
+$top=3&$search=*&$filter=rating_count gt 100
+
+{
+    "@odata.context": "https://search00001.search.windows.net/indexes('azuretable-index')/$metadata#docs(*)",
+    "value": [
+        {
+            "@search.score": 1,
+            "Key": "company-moodle30e3c6e5-9415-4d85-8229-c2133203c535",
+            "description": "Learn the policies related to the distribution and use of computers, phones, software, and other technology",
+            "duration": 1,
+            "instructor": "Mike Montoya",
+            "level": "beginner",
+            "product": "NA",
+            "rating_average": 4.9,
+            "rating_count": 550,
+            "role": "all",
+            "source": "Company Moodle",
+            "title": "Onboarding - Technology Policies ",
+            "url": "https://www.example.com/course2",
+            "keyphrases": [
+                "other technology",
+                "policies",
+                "distribution",
+                "use",
+                "computers",
+                "phones",
+                "software"
+            ]
+        },
+        {
+            "@search.score": 1,
+            "Key": "company-moodle9700e1dc-b293-4306-9e1b-0d345863db54",
+            "description": "This course will teach you the specific ways our company uses Git. You will learn details for comments, branching, pull requests, and other procsses",
+            "duration": 3,
+            "instructor": "Claudia Blackman",
+            "level": "beginner",
+            "product": "git",
+            "rating_average": 4.5,
+            "rating_count": 125,
+            "role": "developer",
+            "source": "Company Moodle",
+            "title": "Git Workflow ",
+            "url": "https://www.example.com/course3",
+            "keyphrases": [
+                "specific ways",
+                "other procsses",
+                "course",
+                "company",
+                "Git",
+                "details",
+                "comments",
+                "requests"
+            ]
+        },
+        {
+            "@search.score": 1,
+            "Key": "company-moodled3f0c955-ac6e-4ced-b91b-ffcef3e8cede",
+            "description": "For developers, learn our best practices for writing secure code for web, server, and desktop development",
+            "duration": 3,
+            "instructor": "Eileen Diaz",
+            "level": "intermediate",
+            "product": "NA",
+            "rating_average": 4.4,
+            "rating_count": 132,
+            "role": "developer",
+            "source": "Company Moodle",
+            "title": "Code security",
+            "url": "https://www.example.com/course9",
+            "keyphrases": [
+                "best practices",
+                "secure code",
+                "desktop development",
+                "developers",
+                "web",
+                "server"
+            ]
+        }
+    ]
+}
+
+$top=10&$search=*&$select=metadata_title,metadata_title,metadata_title
+
+{
+    "@odata.context": "https://search00001.search.windows.net/indexes('azureblob-index')/$metadata#docs(*)",
+    "value": [
+        {
+            "@search.score": 1,
+            "metadata_title": ""
+        },
+        {
+            "@search.score": 1,
+            "metadata_title": "A classification method for social information of sellers on social network"
+        },
+        {
+            "@search.score": 1,
+            "metadata_title": "Sentiment analysis and the complex natural language"
+        },
+        {
+            "@search.score": 1,
+            "metadata_title": "Privacy preservation techniques in big data analytics: a survey"
+        },
+        {
+            "@search.score": 1,
+            "metadata_title": "Mobile marketing recommendation method based on user location feedback"
+        },
+        {
+            "@search.score": 1,
+            "metadata_title": ""
+        },
+        {
+            "@search.score": 1,
+            "metadata_title": "Mining aspects of customer’s review on the social network"
+        },
+        {
+            "@search.score": 1,
+            "metadata_title": "Local regression transfer learning with applications to users’ psychological characteristics prediction"
+        },
+        {
+            "@search.score": 1,
+            "metadata_title": "Discriminated by an algorithm: a systematic review of discrimination and fairness by algorithmic decision-making in the context of HR recruitment and HR development"
+        },
+        {
+            "@search.score": 1,
+            "metadata_title": "QER: a new feature selection method for sentiment analysis"
+        }
+    ]
+}

@@ -1,0 +1,577 @@
+$top=3&$search=*&facet=source
+{
+    "@odata.context": "https://search00001.search.windows.net/indexes('azuretable-index')/$metadata#docs(*)",
+    "@search.facets": {
+        "source": [
+            {
+                "count": 14,
+                "value": "Company Moodle"
+            },
+            {
+                "count": 6,
+                "value": "MS Learn"
+            }
+        ]
+    },
+    "value": [
+        {
+            "@search.score": 1,
+            "Key": "company-moodle30e3c6e5-9415-4d85-8229-c2133203c535",
+            "description": "Learn the policies related to the distribution and use of computers, phones, software, and other technology",
+            "duration": 1,
+            "instructor": "Mike Montoya",
+            "level": "beginner",
+            "product": "NA",
+            "rating_average": 4.9,
+            "rating_count": 550,
+            "role": "all",
+            "source": "Company Moodle",
+            "title": "Onboarding - Technology Policies ",
+            "url": "https://www.example.com/course2",
+            "keyphrases": [
+                "other technology",
+                "policies",
+                "distribution",
+                "use",
+                "computers",
+                "phones",
+                "software"
+            ],
+            "candidate": [
+                "Gerald Dominguez"
+            ]
+        },
+        {
+            "@search.score": 1,
+            "Key": "company-moodle85ee725b-4ae0-4719-8785-ddf99e19faf1",
+            "description": "For administrators, learn our best practices for securing all databases",
+            "duration": 3,
+            "instructor": "Eileen Diaz",
+            "level": "advanced",
+            "product": "SQL",
+            "rating_average": 4.3,
+            "rating_count": 45,
+            "role": "admin",
+            "source": "Company Moodle",
+            "title": "Security for database admins",
+            "url": "https://www.example.com/course8",
+            "keyphrases": [
+                "best practices",
+                "administrators",
+                "databases"
+            ],
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "Key": "company-moodle9700e1dc-b293-4306-9e1b-0d345863db54",
+            "description": "This course will teach you the specific ways our company uses Git. You will learn details for comments, branching, pull requests, and other procsses",
+            "duration": 3,
+            "instructor": "Claudia Blackman",
+            "level": "beginner",
+            "product": "git",
+            "rating_average": 4.5,
+            "rating_count": 125,
+            "role": "developer",
+            "source": "Company Moodle",
+            "title": "Git Workflow ",
+            "url": "https://www.example.com/course3",
+            "keyphrases": [
+                "specific ways",
+                "other procsses",
+                "course",
+                "company",
+                "Git",
+                "details",
+                "comments",
+                "requests"
+            ],
+            "candidate": []
+        }
+    ]
+}
+
+$search=*&facet=role&$select=title,instructor,role,level,candidate&$orderby=role
+
+{
+    "@odata.context": "https://search00001.search.windows.net/indexes('azuretable-index')/$metadata#docs(*)",
+    "@search.facets": {
+        "role": [
+            {
+                "count": 6,
+                "value": "developer"
+            },
+            {
+                "count": 5,
+                "value": "all"
+            },
+            {
+                "count": 2,
+                "value": "admin"
+            },
+            {
+                "count": 2,
+                "value": "architect"
+            },
+            {
+                "count": 2,
+                "value": "business-user"
+            },
+            {
+                "count": 1,
+                "value": "ai-engineer"
+            },
+            {
+                "count": 1,
+                "value": "functional-consultant"
+            },
+            {
+                "count": 1,
+                "value": "solution-architect"
+            }
+        ]
+    },
+    "value": [
+        {
+            "@search.score": 1,
+            "instructor": "Eileen Diaz",
+            "level": "advanced",
+            "role": "admin",
+            "title": "Security for database admins",
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Claudia Blackman",
+            "level": "intermediate",
+            "role": "admin",
+            "title": "DevOps for Ops",
+            "candidate": [
+                "Claudia Blackman"
+            ]
+        },
+        {
+            "@search.score": 1,
+            "instructor": "",
+            "level": "advanced",
+            "role": "ai-engineer",
+            "title": "Use containers for your Language Understanding Intelligent Service (LUIS) Apps",
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Mike Montoya",
+            "level": "beginner",
+            "role": "all",
+            "title": "Onboarding - Technology Policies ",
+            "candidate": [
+                "Gerald Dominguez"
+            ]
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Gerald Dominguez",
+            "level": "beginner",
+            "role": "all",
+            "title": "Remote work",
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Mike Montoya",
+            "level": "beginner",
+            "role": "all",
+            "title": "Workplace Health",
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Mike Montoya",
+            "level": "beginner",
+            "role": "all",
+            "title": "Onboarding - Time Tracking ",
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Gerald Dominguez",
+            "level": "beginner",
+            "role": "all",
+            "title": "O365",
+            "candidate": [
+                "Eileen Diaz"
+            ]
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Eileen Diaz",
+            "level": "intermediate",
+            "role": "architect",
+            "title": "Ethics in AI",
+            "candidate": [
+                "Mike Montoya"
+            ]
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Eileen Diaz",
+            "level": "advanced",
+            "role": "architect",
+            "title": "Encryption and security",
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "instructor": "",
+            "level": "beginner",
+            "role": "business-user",
+            "title": "Get started with AI Builder Text recognition",
+            "candidate": [
+                "Mike Montoya"
+            ]
+        },
+        {
+            "@search.score": 1,
+            "instructor": "",
+            "level": "intermediate",
+            "role": "business-user",
+            "title": "Define an AI strategy to create business value",
+            "candidate": [
+                "Mike Montoya"
+            ]
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Claudia Blackman",
+            "level": "beginner",
+            "role": "developer",
+            "title": "Git Workflow ",
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Eileen Diaz",
+            "level": "intermediate",
+            "role": "developer",
+            "title": "Code security",
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Claudia Blackman",
+            "level": "intermediate",
+            "role": "developer",
+            "title": "DevOps for Dev",
+            "candidate": [
+                "Claudia Blackman"
+            ]
+        },
+        {
+            "@search.score": 1,
+            "instructor": "",
+            "level": "intermediate",
+            "role": "developer",
+            "title": "Manage your Language Understanding Intelligent Service (LUIS) Apps",
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Robert Gillis",
+            "level": "intermediate",
+            "role": "developer",
+            "title": "Maps",
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Eileen Diaz",
+            "level": "advanced",
+            "role": "developer",
+            "title": "Security for database code",
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "instructor": "",
+            "level": "beginner",
+            "role": "functional-consultant",
+            "title": "Enable business users with key AI use cases",
+            "candidate": [
+                "Mike Montoya"
+            ]
+        },
+        {
+            "@search.score": 1,
+            "instructor": "",
+            "level": "beginner",
+            "role": "solution-architect",
+            "title": "Run quality tests in your build pipeline by using Azure Pipelines",
+            "candidate": []
+        }
+    ]
+}
+
+$top=10&$search=*&$filter=rating_average gt 4 &$select=title, instructor,level,candidate&$orderby=role
+
+
+{
+    "@odata.context": "https://search00001.search.windows.net/indexes('azuretable-index')/$metadata#docs(*)",
+    "value": [
+        {
+            "@search.score": 1,
+            "instructor": "Eileen Diaz",
+            "level": "advanced",
+            "title": "Security for database admins",
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Claudia Blackman",
+            "level": "intermediate",
+            "title": "DevOps for Ops",
+            "candidate": [
+                "Claudia Blackman"
+            ]
+        },
+        {
+            "@search.score": 1,
+            "instructor": "",
+            "level": "advanced",
+            "title": "Use containers for your Language Understanding Intelligent Service (LUIS) Apps",
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Mike Montoya",
+            "level": "beginner",
+            "title": "Onboarding - Technology Policies ",
+            "candidate": [
+                "Gerald Dominguez"
+            ]
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Gerald Dominguez",
+            "level": "beginner",
+            "title": "Remote work",
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Mike Montoya",
+            "level": "beginner",
+            "title": "Workplace Health",
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Mike Montoya",
+            "level": "beginner",
+            "title": "Onboarding - Time Tracking ",
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Gerald Dominguez",
+            "level": "beginner",
+            "title": "O365",
+            "candidate": [
+                "Eileen Diaz"
+            ]
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Eileen Diaz",
+            "level": "intermediate",
+            "title": "Ethics in AI",
+            "candidate": [
+                "Mike Montoya"
+            ]
+        },
+        {
+            "@search.score": 1,
+            "instructor": "Eileen Diaz",
+            "level": "advanced",
+            "title": "Encryption and security",
+            "candidate": []
+        }
+    ]
+}
+
+
+$top=10&$rating_average/all(r: r ge 4 and r le 5) &$select=title,rating_average,candidate&$orderby=role
+
+
+{
+    "@odata.context": "https://search00001.search.windows.net/indexes('azuretable-index')/$metadata#docs(*)",
+    "value": [
+        {
+            "@search.score": 1,
+            "rating_average": 4.3,
+            "title": "Security for database admins",
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "rating_average": 4.9,
+            "title": "DevOps for Ops",
+            "candidate": [
+                "Claudia Blackman"
+            ]
+        },
+        {
+            "@search.score": 1,
+            "rating_average": 4.75,
+            "title": "Use containers for your Language Understanding Intelligent Service (LUIS) Apps",
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "rating_average": 4.9,
+            "title": "Onboarding - Technology Policies ",
+            "candidate": [
+                "Gerald Dominguez"
+            ]
+        },
+        {
+            "@search.score": 1,
+            "rating_average": 4.7,
+            "title": "Remote work",
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "rating_average": 4.6,
+            "title": "Workplace Health",
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "rating_average": 4.8,
+            "title": "Onboarding - Time Tracking ",
+            "candidate": []
+        },
+        {
+            "@search.score": 1,
+            "rating_average": 4.6,
+            "title": "O365",
+            "candidate": [
+                "Eileen Diaz"
+            ]
+        },
+        {
+            "@search.score": 1,
+            "rating_average": 4.3,
+            "title": "Ethics in AI",
+            "candidate": [
+                "Mike Montoya"
+            ]
+        },
+        {
+            "@search.score": 1,
+            "rating_average": 4.2,
+            "title": "Encryption and security",
+            "candidate": []
+        }
+    ]
+}
+
+
+
+*&$filter=search.ismatch('Springer', 'publisher')&$select=metadata_author,metadata_title,publicationName,publisher,doi,publicationDate
+
+{
+    "@odata.context": "https://search00001.search.windows.net/indexes('azureblob-index')/$metadata#docs(*)",
+    "value": [
+        {
+            "@search.score": 1,
+            "metadata_author": "Haoliang Cui",
+            "metadata_title": "A classification method for social information of sellers on social network",
+            "publicationName": "Genetic Resources and Crop Evolution",
+            "publisher": "Springer",
+            "doi": "10.1007/s10722-021-01340-z",
+            "publicationDate": "2022-01-19"
+        },
+        {
+            "@search.score": 1,
+            "metadata_author": "Muhammad Taimoor Khan",
+            "metadata_title": "Sentiment analysis and the complex natural language",
+            "publicationName": "Annals of Operations Research",
+            "publisher": "Springer",
+            "doi": "10.1007/s10479-020-03775-6",
+            "publicationDate": "2022-01-01"
+        },
+        {
+            "@search.score": 1,
+            "metadata_author": "Chunyong Yin ",
+            "metadata_title": "Mobile marketing recommendation method based on user location feedback",
+            "publicationName": "Scientometrics",
+            "publisher": "Springer",
+            "doi": "10.1007/s11192-020-03807-9",
+            "publicationDate": "2021-02-01"
+        },
+        {
+            "@search.score": 1,
+            "metadata_author": "Tu Nguyen Thi Ngoc ",
+            "metadata_title": "Mining aspects of customer’s review on the social network",
+            "publicationName": "Machine Learning",
+            "publisher": "Springer",
+            "doi": "10.1023/B:MACH.0000035471.28235.6d",
+            "publicationDate": "2004-10-01"
+        },
+        {
+            "@search.score": 1,
+            "metadata_author": "Zengda Guan",
+            "metadata_title": "Local regression transfer learning with applications to users’ psychological characteristics prediction",
+            "publicationName": "Brain Informatics",
+            "publisher": "Springer",
+            "doi": "10.1007/s40708-015-0017-z",
+            "publicationDate": "2015-09-01"
+        },
+        {
+            "@search.score": 1,
+            "metadata_author": "Tuba Parlar ",
+            "metadata_title": "QER: a new feature selection method for sentiment analysis",
+            "publicationName": "Human-centric Computing and Information Sciences",
+            "publisher": "Springer",
+            "doi": "10.1186/s13673-018-0135-8",
+            "publicationDate": "2018-05-09"
+        },
+        {
+            "@search.score": 1,
+            "metadata_author": "Sandhya Narayanan ",
+            "metadata_title": "Improving prediction with enhanced Distributed Memory-based Resilient Dataset Filter",
+            "publicationName": "Journal of Big Data",
+            "publisher": "Springer",
+            "doi": "10.1186/s40537-020-00292-y",
+            "publicationDate": "2020-02-28"
+        },
+        {
+            "@search.score": 1,
+            "metadata_author": "Rik Das",
+            "metadata_title": "Multi technique amalgamation for enhanced information identification with content based image data",
+            "publicationName": "SpringerPlus",
+            "publisher": "Springer",
+            "doi": "10.1186/s40064-015-1515-4",
+            "publicationDate": "2015-12-01"
+        },
+        {
+            "@search.score": 1,
+            "metadata_author": "Boping Zhang",
+            "metadata_title": "Augmented reality virtual glasses try-on technology based on iOS platform",
+            "publicationName": "EURASIP Journal on Image and Video Processing",
+            "publisher": "Springer",
+            "doi": "10.1186/s13640-018-0373-8",
+            "publicationDate": "2018-11-27"
+        },
+        {
+            "@search.score": 1,
+            "metadata_author": " Shun Kodate ",
+            "metadata_title": "Detecting problematic transactions in a consumer-to-consumer e-commerce network",
+            "publicationName": "Applied Network Science",
+            "publisher": "Springer",
+            "doi": "10.1007/s41109-020-00330-x",
+            "publicationDate": "2020-11-16"
+        }
+    ]
+}
